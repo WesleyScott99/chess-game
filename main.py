@@ -14,7 +14,7 @@ height = 700
 display = pygame.display.set_mode((width, height))
 clock = pygame.time.Clock()
 
-objects.init(display)
+pieces.init(display)
 interface.init(display)
 
 background = (51, 51, 51)
