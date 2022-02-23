@@ -37,8 +37,8 @@ def GAME():
     exit = interface.Button(1000, 400, 300, 100, close, (241, 148, 138), (245, 183, 177))
     exit.add_text("QUIT", 60, "Fonts/helvetica.ttf", background)
 
-    mandav = interface.Button(width - 300, height - 80, 300, 100, None, background)
-    mandav.add_text("MANDAV", 60, "Fonts/helvetica.ttf", (41, 41, 41))
+    play = interface.Button(width - 300, height - 80, 300, 100, None, background)
+    play.add_text("Wesley Scott", 60, "Fonts/helvetica.ttf", (41, 41, 41))
 
     while True:
         for event in pygame.event.get():
@@ -59,7 +59,7 @@ def GAME():
         start.draw()
         exit.draw()
         welcome.draw()
-        mandav.draw()
+        play.draw()
 
         pygame.display.update()
         clock.tick(60)
